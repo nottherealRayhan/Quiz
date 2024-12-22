@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gk.html">General Knowledge</a>
+            <a href="math.html">Maths Quiz</a>
+            <a href="science.html">Science Quiz</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Hello <span id="name"></span>Welcome to your quiz, your name has now been registered</h2>
+        <div class="flexbox">
+            <div class="col">
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/NfOk6JZWdL4/maxresdefault.jpg" alt="">
+                    <p>Loren ispum dolor sit amet, consectetur adipiscing elit. At, adipisci. Iste obcaecati qui
+                        quibusdam!
+                        Inventore voluptatibus quis veritatis, aut ipsa et tempore porro repellendus ipsam aspernatur
+                        error repellat ex quiden</p>
+                        <a href="gk.html">Start the Quiz</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://play-lh.googleusercontent.com/vMq6_OouGHPzSt697sd-W9jjTP5l8rscPfYakniVAM0hPVVdtBZrjVO0xgXY1oHCuXs=w526-h296-rw" alt="">
+                    <p>Loren ispum dolor sit amet, consectetur adipiscing elit. At, adipisci. Iste obcaecati qui
+                        quibusdam!
+                        Inventore voluptatibus quis veritatis, aut ipsa et tempore porro repellendus ipsam aspernatur
+                        error repellat ex quiden</p>
+                        <a href="math.html">Start the Quiz</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://i.ytimg.com/vi/sqzo0L1EK6c/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAg-MVUy7x7Oo4WnedlBFkhXYXQ8A" alt="">
+                    <p>Loren ispum dolor sit amet, consectetur adipiscing elit. At, adipisci. Iste obcaecati qui
+                        quibusdam!
+                        Inventore voluptatibus quis veritatis, aut ipsa et tempore porro repellendus ipsam aspernatur
+                        error repellat ex quiden</p>
+                    <a href="science.html">Start the Quiz</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let name = localStorage.getItem('name');
+        if(name === null){
+            localStorage.setItem('name',name);
+        }
+        let nameBox = document.getElementById('name')
+        nameBox.innerHTML = name;
+    </script>
+
+</body>
+
+</html>
